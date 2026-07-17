@@ -1,3 +1,5 @@
+const siteVersion = '20260717-3';
+
 const chapters = {
   '2019-10-04': {
     day: 'Day one', date: '04 October 2019', title: 'A Birthday Above Dubai',
@@ -180,7 +182,7 @@ function sectionsMarkup(sections) {
 
 function navMarkup(direction, item) {
   if (!item) return '<span></span>';
-  return `<a href="${item[0]}.html"><small>${direction}</small><strong>${item[1]}</strong></a>`;
+  return `<a href="${item[0]}.html?v=${siteVersion}"><small>${direction}</small><strong>${item[1]}</strong></a>`;
 }
 
 if (chapter) {
@@ -189,7 +191,7 @@ if (chapter) {
   root.innerHTML = `
     <header class="day-header"${dayStyle}>
       <nav class="day-nav" aria-label="Chapter navigation">
-        <a class="back-link" href="../index.html">← Full journey</a>
+        <a class="back-link" href="../index.html?v=${siteVersion}">← Full journey</a>
         <span class="date-index">${chapter.day} · Dubai 2019</span>
       </nav>
       <div class="day-title">
@@ -210,5 +212,5 @@ if (chapter) {
       ${navMarkup('Next chapter', chapter.next)}
     </nav>`;
 } else {
-  root.innerHTML = '<p>Chapter not found. <a href="../index.html">Return to the journey</a>.</p>';
+  root.innerHTML = `<p>Chapter not found. <a href="../index.html?v=${siteVersion}">Return to the journey</a>.</p>`;
 }
