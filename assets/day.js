@@ -1,4 +1,4 @@
-const siteVersion = '20260717-4';
+const siteVersion = '20260717-5';
 
 const chapters = {
   '2019-10-04': {
@@ -150,16 +150,97 @@ const dateKey = document.body.dataset.day;
 const chapter = chapters[dateKey];
 const root = document.getElementById('day-root');
 
+function photoCarouselMarkup(images) {
+  if (!images.length) return '';
+
+  const slides = images.map((item, index) => `
+    <figure class="carousel-slide ${item.layout || ''}" aria-hidden="${index === 0 ? 'false' : 'true'}">
+      <div class="carousel-stage" style="--media-bg: url('${item.src}')">
+        <img src="${item.src}" alt="${item.alt}" loading="${index === 0 ? 'eager' : 'lazy'}">
+      </div>
+      <figcaption>${item.caption}</figcaption>
+    </figure>`).join('');
+
+  const controls = images.length > 1 ? `
+    <div class="carousel-controls">
+      <button class="carousel-button previous" type="button" aria-label="Previous photo">←</button>
+      <p class="carousel-status" aria-live="polite"><span data-current>1</span> <span aria-hidden="true">/</span> ${images.length}</p>
+      <button class="carousel-button next" type="button" aria-label="Next photo">→</button>
+    </div>
+    <p class="carousel-hint">Swipe or use the arrows to turn through the photographs</p>` : '';
+
+  return `
+    <div class="photo-carousel" data-carousel data-count="${images.length}">
+      <div class="carousel-viewport" tabindex="0" role="region" aria-label="Photo gallery, ${images.length} ${images.length === 1 ? 'photograph' : 'photographs'}">
+        <div class="carousel-track">${slides}</div>
+      </div>
+      ${controls}
+    </div>`;
+}
+
+function videoMarkup(videos) {
+  if (!videos.length) return '';
+  return `<div class="media-grid video-grid ${videos.length === 1 ? 'single' : ''}">${videos.map((item) => `
+    <figure class="media-item video ${item.layout || ''}">
+      <video controls playsinline preload="metadata" poster="${item.poster}"><source src="${item.src}">Your browser does not support this video.</video>
+      <figcaption>${item.caption}</figcaption>
+    </figure>`).join('')}</div>`;
+}
+
 function mediaMarkup(items) {
   if (!items.length) {
     return '<div class="empty-memory"><strong>This memory is still unfolding.</strong><p>Add photographs, videos, or notes for this date and the chapter can grow with them.</p></div>';
   }
-  return `<div class="media-grid ${items.length === 1 ? 'single' : ''}">${items.map((item) => {
-    const media = item.type === 'video'
-      ? `<video controls playsinline preload="metadata" poster="${item.poster}"><source src="${item.src}">Your browser does not support this video.</video>`
-      : `<div class="photo-stage" style="--media-bg: url('${item.src}')"><img src="${item.src}" alt="${item.alt}" loading="lazy"></div>`;
-    return `<figure class="media-item ${item.type} ${item.layout || ''}">${media}<figcaption>${item.caption}</figcaption></figure>`;
-  }).join('')}</div>`;
+  const images = items.filter((item) => item.type === 'image');
+  const videos = items.filter((item) => item.type === 'video');
+  return `<div class="section-media">${photoCarouselMarkup(images)}${videoMarkup(videos)}</div>`;
+}
+
+function initializeCarousels() {
+  document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+    const slides = [...carousel.querySelectorAll('.carousel-slide')];
+    const track = carousel.querySelector('.carousel-track');
+    const viewport = carousel.querySelector('.carousel-viewport');
+    const current = carousel.querySelector('[data-current]');
+    const previous = carousel.querySelector('.previous');
+    const next = carousel.querySelector('.next');
+    if (slides.length < 2) return;
+
+    let activeIndex = 0;
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    const showSlide = (index) => {
+      activeIndex = (index + slides.length) % slides.length;
+      track.style.transform = `translateX(-${activeIndex * 100}%)`;
+      slides.forEach((slide, slideIndex) => slide.setAttribute('aria-hidden', slideIndex === activeIndex ? 'false' : 'true'));
+      current.textContent = String(activeIndex + 1);
+    };
+
+    previous.addEventListener('click', () => showSlide(activeIndex - 1));
+    next.addEventListener('click', () => showSlide(activeIndex + 1));
+    viewport.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        showSlide(activeIndex - 1);
+      }
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        showSlide(activeIndex + 1);
+      }
+    });
+    viewport.addEventListener('touchstart', (event) => {
+      touchStartX = event.changedTouches[0].clientX;
+      touchStartY = event.changedTouches[0].clientY;
+    }, { passive: true });
+    viewport.addEventListener('touchend', (event) => {
+      const deltaX = event.changedTouches[0].clientX - touchStartX;
+      const deltaY = event.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(deltaX) > 45 && Math.abs(deltaX) > Math.abs(deltaY)) {
+        showSlide(activeIndex + (deltaX < 0 ? 1 : -1));
+      }
+    }, { passive: true });
+  });
 }
 
 function sectionsMarkup(sections) {
@@ -211,6 +292,7 @@ if (chapter) {
       ${navMarkup('Previous chapter', chapter.prev)}
       ${navMarkup('Next chapter', chapter.next)}
     </nav>`;
+  initializeCarousels();
 } else {
   root.innerHTML = `<p>Chapter not found. <a href="../index.html?v=${siteVersion}">Return to the journey</a>.</p>`;
 }
