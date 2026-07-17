@@ -9,22 +9,68 @@ const chapters = {
       'We explored Atlantis, wandered through the aquarium’s deep blue light, relaxed by the water, and took in our first views of the Palm together.',
       'Then the day lifted into the sky. From the helicopter, Dubai opened beneath us — the coastline, the islands, and a city that was no longer simply a place on a map. It had become the setting for our story.'
     ],
-    media: [
-      { type: 'image', src: '../assets/images/oct4/IMG_1849.jpg', alt: 'Gez and Hetty arriving in Dubai', caption: 'The journey begins' },
-      { type: 'image', src: '../assets/images/oct4/IMG_1079.jpg', alt: 'A birthday cake waiting for Gez at Atlantis', caption: 'Gez’s birthday was 3 October — the celebration continued in Dubai', layout: 'portrait' },
-      { type: 'image', src: '../assets/images/oct4/IMG_1036.jpg', alt: 'The grand interior at Atlantis Dubai', caption: 'Arriving at Atlantis' },
-      { type: 'image', src: '../assets/images/oct4/IMG_1862.jpg', alt: 'Atlantis and the Dubai coastline seen from above', caption: 'Our first view of Atlantis' },
-      { type: 'image', src: '../assets/images/oct4/IMG_1869.jpg', alt: 'Hetty standing outside Atlantis Dubai', caption: 'Exploring Atlantis', layout: 'portrait' },
-      { type: 'image', src: '../assets/images/oct4/IMG_1924.jpg', alt: 'Gez in front of the large aquarium at Atlantis', caption: 'Under the aquarium blue', layout: 'aquarium' },
-      { type: 'image', src: '../assets/images/oct4/IMG_1928-ANIMATION.jpg', alt: 'Hetty watching the fish at the Atlantis aquarium', caption: 'A world beneath the water', layout: 'portrait aquarium' },
-      { type: 'image', src: '../assets/images/oct4/IMG_2172.jpg', alt: 'Gez and Hetty together at the aquarium', caption: 'Together at the aquarium', layout: 'aquarium' },
-      { type: 'image', src: '../assets/images/oct4/IMG_2179.jpg', alt: 'Colourful fish inside the Atlantis aquarium', caption: 'Colour beneath the water', layout: 'aquarium' },
-      { type: 'image', src: '../assets/images/oct4/IMG_1983.jpg', alt: 'Gez and Hetty seated inside the helicopter', caption: 'Ready for takeoff' },
-      { type: 'image', src: '../assets/images/oct4/IMG_2025.jpg', alt: 'Gez and Hetty wearing helicopter headsets', caption: 'Headsets on', layout: 'portrait' },
-      { type: 'image', src: '../assets/images/oct4/IMG_2047.jpg', alt: 'Gez and Hetty beside their Dubai helicopter', caption: 'The helicopter adventure' },
-      { type: 'video', src: '../assets/videos/helicopter-flight.mp4', poster: '../assets/posters/helicopter.jpg', caption: 'Dubai Helicopter Flight · 1 min 10 sec', layout: 'wide' },
-      { type: 'image', src: '../assets/images/oct4/IMG_2090.jpg', alt: 'Gez and Hetty together in the Atlantis pool', caption: 'Poolside together' },
-      { type: 'image', src: '../assets/images/oct4/IMG_2125.jpg', alt: 'A casual meal during the first day in Dubai', caption: 'A bite between adventures' }
+    sections: [
+      {
+        folder: 'Dubai Airport',
+        title: 'Touchdown in Dubai',
+        description: 'Dubai International Airport was our doorway into the journey. Known by its code, DXB, it is Dubai’s primary international airport and one of the world’s great connecting hubs. Its three terminals bring together travellers from hundreds of destinations, turning every arrival hall into a meeting point between countries and stories. For us, its scale mattered less than the feeling of stepping through it together: the long flight was over, Dubai was suddenly real, and eight days of adventure waited beyond the doors. This first photograph marks the instant the trip stopped being a plan and became our shared memory.',
+        source: 'https://dubaiairports.ae/corporate/our-story/dxb-dubai-international',
+        sourceLabel: 'Dubai Airports',
+        media: [
+          { type: 'image', src: '../assets/images/oct4/IMG_1849.jpg', alt: 'Gez and Hetty arriving at Dubai International Airport', caption: 'The journey begins at DXB' }
+        ]
+      },
+      {
+        folder: 'Atlantis The Palm',
+        title: 'Arriving at an icon',
+        description: 'Atlantis, The Palm opened in 2008 as the first resort on the outer crescent of Palm Jumeirah, giving Dubai’s palm-shaped island an unmistakable gateway. Its grand arch, marine-inspired interiors and blend of classical Arabian details make arriving feel theatrical before any activity begins. The resort brings rooms, restaurants, pools, beaches, an aquarium and Aquaventure together in one destination, so the day naturally moved between celebration and discovery. Here, Gez’s 3 October birthday carried into the trip with cake, laughter and our first look around the property — a fittingly joyful welcome to Dubai and the beginning of the story we were about to create.',
+        source: 'https://www.atlantis.com/dubai/atlantis-the-palm',
+        sourceLabel: 'Atlantis Dubai',
+        media: [
+          { type: 'image', src: '../assets/images/oct4/IMG_1035.jpg', alt: 'A birthday welcome for Gez at Atlantis, The Palm', caption: 'The birthday celebration continues in Dubai' },
+          { type: 'image', src: '../assets/images/oct4/IMG_1036.jpg', alt: 'The grand interior at Atlantis, The Palm', caption: 'Inside Atlantis' },
+          { type: 'image', src: '../assets/images/oct4/IMG_1079.jpg', alt: 'A birthday cake waiting for Gez at Atlantis', caption: 'A birthday cake for Gez', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct4/IMG_1862.jpg', alt: 'Atlantis and the Dubai coastline', caption: 'Our first view of Atlantis' },
+          { type: 'image', src: '../assets/images/oct4/IMG_1869.jpg', alt: 'Hetty standing outside Atlantis, The Palm', caption: 'Exploring the resort', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct4/IMG_1924.jpg', alt: 'Gez in front of the large aquarium window at Atlantis', caption: 'Under the aquarium blue', layout: 'aquarium' },
+          { type: 'image', src: '../assets/images/oct4/IMG_1928-ANIMATION.jpg', alt: 'Hetty watching the fish at Atlantis', caption: 'A world beneath the water', layout: 'portrait aquarium' }
+        ]
+      },
+      {
+        folder: 'Fly High Dubai',
+        title: 'Taking the story into the sky',
+        description: 'Helicopter tours from Atlantis lift off beside Palm Jumeirah and reveal the idea behind Dubai’s coastline in a way the ground cannot. From above, the Palm’s fronds and crescent become clear, while the city’s beaches, towers and landmarks line up across the horizon. Shared flights and private charters follow the coast and skyline, turning familiar postcard views into a moving panorama through wide cabin windows. For Gez and Hetty, the flight added a burst of excitement to the birthday celebration: headsets on, city below, and the extraordinary geography of Dubai unfolding beneath us one landmark at a time.',
+        source: 'https://www.atlantis.com/dubai/atlantis-the-palm/experiences/tours-and-excursions',
+        sourceLabel: 'Atlantis tours and excursions',
+        media: [
+          { type: 'image', src: '../assets/images/oct4/IMG_1983.jpg', alt: 'Gez and Hetty seated inside the helicopter', caption: 'Ready for takeoff' },
+          { type: 'image', src: '../assets/images/oct4/IMG_2025.jpg', alt: 'Gez and Hetty wearing helicopter headsets', caption: 'Headsets on', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct4/IMG_2047.jpg', alt: 'Gez and Hetty beside their Dubai helicopter', caption: 'The helicopter adventure' },
+          { type: 'video', src: '../assets/videos/helicopter-flight.mp4', poster: '../assets/posters/helicopter.jpg', caption: 'Dubai Helicopter Flight · 1 min 10 sec', layout: 'wide' }
+        ]
+      },
+      {
+        folder: 'Swimming at Atlantis The Palm',
+        title: 'Slowing down by the water',
+        description: 'After the flight, the pace softened at Atlantis, where resort pools and a private beach stretch along the edge of Palm Jumeirah. The Palm Pool flows through the heart of the property in a connected lagoon-style design, creating room to swim, float and simply pause between adventures. It is the quieter side of a resort known for spectacle: warm Dubai light, water close at hand and time together without a schedule. Our swim became a gentle counterpoint to the helicopter’s rush — a moment to cool down, laugh, and take in the fact that the journey had only just begun.',
+        source: 'https://www.atlantis.com/dubai/atlantis-the-palm/experiences/pool-and-beach',
+        sourceLabel: 'Atlantis pools and beach',
+        media: [
+          { type: 'image', src: '../assets/images/oct4/IMG_2090.jpg', alt: 'Gez and Hetty together in the Atlantis pool', caption: 'Poolside together' }
+        ]
+      },
+      {
+        folder: 'Atlantis Lost Chambers',
+        title: 'Walking into the underwater world',
+        description: 'The Lost Chambers Aquarium turns the legend of Atlantis into a sequence of atmospheric passageways, viewing windows and marine exhibits. Today the experience is presented through 14 chambers and a habitat of around 65,000 marine animals, with sharks, rays and schools of fish moving through the vast Ambassador Lagoon. The stonework and low blue light make the visit feel less like a conventional aquarium and more like exploring a submerged city. It was a fitting final chapter for our first day: after seeing Dubai from the sky and relaxing in the water, we ended by looking into another world beneath its surface.',
+        source: 'https://www.atlantis.com/dubai/atlantis-the-palm/experiences',
+        sourceLabel: 'Atlantis experiences',
+        media: [
+          { type: 'image', src: '../assets/images/oct4/IMG_2125.jpg', alt: 'Hetty having a casual meal before visiting The Lost Chambers', caption: 'A bite before exploring the aquarium' },
+          { type: 'image', src: '../assets/images/oct4/IMG_2172.jpg', alt: 'Gez and Hetty together at The Lost Chambers Aquarium', caption: 'Together at the aquarium', layout: 'aquarium' },
+          { type: 'image', src: '../assets/images/oct4/IMG_2179.jpg', alt: 'Colourful fish inside The Lost Chambers Aquarium', caption: 'Colour beneath the water', layout: 'aquarium' }
+        ]
+      }
     ],
     prev: null, next: ['2019-10-05', 'Dolphin Encounter']
   },
@@ -114,6 +160,24 @@ function mediaMarkup(items) {
   }).join('')}</div>`;
 }
 
+function sectionsMarkup(sections) {
+  return `<div class="memory-sections">${sections.map((section, index) => `
+    <section class="memory-section" id="section-${index + 1}">
+      <div class="section-intro">
+        <div class="section-number" aria-hidden="true">${String(index + 1).padStart(2, '0')}</div>
+        <div class="section-heading">
+          <p class="eyebrow gold">${section.folder}</p>
+          <h2>${section.title}</h2>
+        </div>
+        <div class="section-description">
+          <p>${section.description}</p>
+          <a href="${section.source}" target="_blank" rel="noreferrer">About the venue · ${section.sourceLabel} <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      ${mediaMarkup(section.media)}
+    </section>`).join('')}</div>`;
+}
+
 function navMarkup(direction, item) {
   if (!item) return '<span></span>';
   return `<a href="${item[0]}.html"><small>${direction}</small><strong>${item[1]}</strong></a>`;
@@ -138,7 +202,9 @@ if (chapter) {
       <div><p class="eyebrow gold">Our memory</p><h2>${chapter.heading}</h2></div>
       <div class="story-copy">${chapter.story.map((paragraph) => `<p>${paragraph}</p>`).join('')}</div>
     </section>
-    <section class="media-section" aria-label="Memories from ${chapter.date}">${mediaMarkup(chapter.media)}</section>
+    ${chapter.sections
+      ? sectionsMarkup(chapter.sections)
+      : `<section class="media-section" aria-label="Memories from ${chapter.date}">${mediaMarkup(chapter.media)}</section>`}
     <nav class="chapter-nav" aria-label="Previous and next chapters">
       ${navMarkup('Previous chapter', chapter.prev)}
       ${navMarkup('Next chapter', chapter.next)}

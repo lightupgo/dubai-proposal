@@ -104,6 +104,15 @@ a { color: inherit; }
 .story-copy { max-width: 720px; }
 .story-copy p { margin: 0 0 24px; color: var(--muted); font: 19px/1.75 var(--serif); }
 .media-section { padding: 0 clamp(24px, 8vw, 128px) clamp(90px, 12vw, 180px); }
+.memory-sections { padding: 0 clamp(24px, 8vw, 128px) clamp(90px, 12vw, 180px); }
+.memory-section { padding: clamp(64px, 8vw, 118px) 0; border-top: 1px solid var(--line); }
+.memory-section:first-child { padding-top: 0; border-top: 0; }
+.section-intro { display: grid; grid-template-columns: 80px minmax(240px, .9fr) minmax(320px, 1.2fr); gap: clamp(28px, 5vw, 78px); align-items: start; margin-bottom: clamp(40px, 6vw, 82px); }
+.section-number { color: var(--gold); font: italic 42px/1 var(--serif); opacity: .72; }
+.section-heading h2 { max-width: 520px; margin: 13px 0 0; font: 400 clamp(38px, 4.4vw, 68px)/.96 var(--serif); letter-spacing: -.045em; }
+.section-description p { margin: 0 0 24px; color: var(--muted); font: 18px/1.75 var(--serif); }
+.section-description a { display: inline-flex; gap: 9px; align-items: center; color: var(--ink); font-size: 9px; font-weight: 800; letter-spacing: .16em; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid var(--gold); padding-bottom: 6px; }
+.section-description a span { color: var(--gold); font-size: 14px; }
 .media-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; align-items: start; }
 .media-grid.single { grid-template-columns: minmax(0, 960px); justify-content: center; }
 .media-item { position: relative; align-self: start; margin: 0; overflow: hidden; background: transparent; }
@@ -163,6 +172,14 @@ a { color: inherit; }
   .day-story { display: block; }
   .day-story .story-copy { margin-top: 34px; }
   .story-copy p { font-size: 17px; }
+  .memory-section { padding-block: 68px; }
+  .memory-section:first-child { padding-top: 0; }
+  .section-intro { grid-template-columns: 48px 1fr; gap: 18px 16px; }
+  .section-number { grid-row: 1; font-size: 30px; }
+  .section-heading { grid-column: 2; }
+  .section-heading h2 { font-size: 40px; }
+  .section-description { grid-column: 1 / -1; padding-top: 10px; }
+  .section-description p { font-size: 17px; }
   .media-grid { grid-template-columns: 1fr; }
   .media-item.wide { grid-column: auto; }
   .chapter-nav { grid-template-columns: 1fr; }
