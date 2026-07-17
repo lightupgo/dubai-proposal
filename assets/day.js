@@ -1,4 +1,4 @@
-const siteVersion = '20260717-10';
+const siteVersion = '20260717-11';
 
 const chapters = {
   '2019-10-04': {
