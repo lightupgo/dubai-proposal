@@ -155,7 +155,7 @@ function mediaMarkup(items) {
   return `<div class="media-grid ${items.length === 1 ? 'single' : ''}">${items.map((item) => {
     const media = item.type === 'video'
       ? `<video controls playsinline preload="metadata" poster="${item.poster}"><source src="${item.src}">Your browser does not support this video.</video>`
-      : `<img src="${item.src}" alt="${item.alt}">`;
+      : `<div class="photo-stage" style="--media-bg: url('${item.src}')"><img src="${item.src}" alt="${item.alt}" loading="lazy"></div>`;
     return `<figure class="media-item ${item.type} ${item.layout || ''}">${media}<figcaption>${item.caption}</figcaption></figure>`;
   }).join('')}</div>`;
 }
