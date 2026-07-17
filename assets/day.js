@@ -1,4 +1,4 @@
-const siteVersion = '20260717-5';
+const siteVersion = '20260717-6';
 
 const chapters = {
   '2019-10-04': {
@@ -204,6 +204,18 @@ function initializeCarousels() {
     const current = carousel.querySelector('[data-current]');
     const previous = carousel.querySelector('.previous');
     const next = carousel.querySelector('.next');
+
+    slides.forEach((slide) => {
+      const image = slide.querySelector('img');
+      const setOrientation = () => {
+        const isPortrait = image.naturalHeight > image.naturalWidth;
+        slide.classList.toggle('is-portrait', isPortrait);
+        slide.classList.toggle('is-landscape', !isPortrait);
+      };
+      if (image.complete && image.naturalWidth) setOrientation();
+      else image.addEventListener('load', setOrientation, { once: true });
+    });
+
     if (slides.length < 2) return;
 
     let activeIndex = 0;
