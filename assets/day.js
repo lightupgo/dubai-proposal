@@ -1,4 +1,4 @@
-const siteVersion = '20260717-7';
+const siteVersion = '20260717-8';
 
 const chapters = {
   '2019-10-04': {
@@ -211,21 +211,30 @@ function initializeCarousels() {
     const current = carousel.querySelector('[data-current]');
     const previous = carousel.querySelector('.previous');
     const next = carousel.querySelector('.next');
+    let activeIndex = 0;
 
-    slides.forEach((slide) => {
+    const syncCarouselWidth = () => {
+      const activeSlide = slides[activeIndex];
+      const isPortrait = activeSlide.classList.contains('portrait') || activeSlide.classList.contains('is-portrait');
+      carousel.classList.toggle('portrait-active', isPortrait);
+      carousel.classList.toggle('landscape-active', !isPortrait);
+    };
+
+    slides.forEach((slide, slideIndex) => {
       const image = slide.querySelector('img');
       const setOrientation = () => {
         const isPortrait = image.naturalHeight > image.naturalWidth;
         slide.classList.toggle('is-portrait', isPortrait);
         slide.classList.toggle('is-landscape', !isPortrait);
+        if (slideIndex === activeIndex) syncCarouselWidth();
       };
       if (image.complete && image.naturalWidth) setOrientation();
       else image.addEventListener('load', setOrientation, { once: true });
     });
 
+    syncCarouselWidth();
     if (slides.length < 2) return;
 
-    let activeIndex = 0;
     let touchStartX = 0;
     let touchStartY = 0;
 
@@ -234,6 +243,7 @@ function initializeCarousels() {
       track.style.transform = `translateX(-${activeIndex * 100}%)`;
       slides.forEach((slide, slideIndex) => slide.setAttribute('aria-hidden', slideIndex === activeIndex ? 'false' : 'true'));
       current.textContent = String(activeIndex + 1);
+      syncCarouselWidth();
     };
 
     previous.addEventListener('click', () => showSlide(activeIndex - 1));
