@@ -1,4 +1,4 @@
-const siteVersion = '20260717-6';
+const siteVersion = '20260717-7';
 
 const chapters = {
   '2019-10-04': {
@@ -58,7 +58,9 @@ const chapters = {
         source: 'https://www.atlantis.com/dubai/atlantis-the-palm/experiences/pool-and-beach',
         sourceLabel: 'Atlantis pools and beach',
         media: [
-          { type: 'image', src: '../assets/images/oct4/IMG_2090.jpg', alt: 'Gez and Hetty together in the Atlantis pool', caption: 'Poolside together' }
+          { type: 'image', src: '../assets/images/oct4/IMG_2090.jpg', alt: 'Gez and Hetty together in the Atlantis pool', caption: 'Poolside together' },
+          { type: 'image', src: '../assets/images/oct4/IMG_2097.jpg', alt: 'Gez taking a photograph in the water with Atlantis The Palm behind him', caption: 'Gez in the water with Atlantis behind' },
+          { type: 'image', src: '../assets/images/oct4/IMG_2103.jpg', alt: 'Hetty smiling in the water as the sun sets beside Atlantis The Palm', caption: 'Hetty in the last light', layout: 'portrait' }
         ]
       },
       {
@@ -68,9 +70,14 @@ const chapters = {
         source: 'https://www.atlantis.com/dubai/atlantis-the-palm/experiences',
         sourceLabel: 'Atlantis experiences',
         media: [
+          { type: 'image', src: '../assets/images/oct4/IMG_2122.jpg', alt: 'Hetty seated with colourful fruit drinks before exploring The Lost Chambers', caption: 'A colourful pause before the chambers', layout: 'portrait' },
           { type: 'image', src: '../assets/images/oct4/IMG_2125.jpg', alt: 'Hetty having a casual meal before visiting The Lost Chambers', caption: 'A bite before exploring the aquarium' },
+          { type: 'image', src: '../assets/images/oct4/IMG_2133.jpg', alt: 'Gez posing beside a cylindrical aquarium filled with silver fish', caption: 'Gez among the silver shoals', layout: 'portrait aquarium' },
+          { type: 'image', src: '../assets/images/oct4/IMG_2142.jpg', alt: 'Hetty standing beside a colourful fish display inside The Lost Chambers', caption: 'Hetty inside the underwater world', layout: 'portrait aquarium' },
+          { type: 'image', src: '../assets/images/oct4/IMG_2151.jpg', alt: 'Blue fish moving through an illuminated chamber at The Lost Chambers Aquarium', caption: 'Blue light through the chambers', layout: 'aquarium' },
           { type: 'image', src: '../assets/images/oct4/IMG_2172.jpg', alt: 'Gez and Hetty together at The Lost Chambers Aquarium', caption: 'Together at the aquarium', layout: 'aquarium' },
-          { type: 'image', src: '../assets/images/oct4/IMG_2179.jpg', alt: 'Colourful fish inside The Lost Chambers Aquarium', caption: 'Colour beneath the water', layout: 'aquarium' }
+          { type: 'image', src: '../assets/images/oct4/IMG_2179.jpg', alt: 'Colourful fish inside The Lost Chambers Aquarium', caption: 'Colour beneath the water', layout: 'aquarium' },
+          { type: 'video', src: '../assets/videos/lost-chambers-live-photo.mp4', poster: '../assets/images/oct4/IMG_2151.jpg', caption: 'Fish in motion through The Lost Chambers · Live Photo', layout: 'wide' }
         ]
       }
     ],
