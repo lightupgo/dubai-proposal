@@ -1,4 +1,4 @@
-const siteVersion = '20260717-12';
+const siteVersion = '20260718-1';
 
 const chapters = {
   '2019-10-04': {
@@ -85,14 +85,46 @@ const chapters = {
   },
   '2019-10-05': {
     day: 'Day two', date: '05 October 2019', title: 'Dolphin Encounter',
-    lead: 'Blue water, a playful encounter, and one of those smiles that says everything.',
+    lead: 'A colourful breakfast, a sunlit lagoon, and a dolphin encounter we would never forget.',
     image: '../assets/posters/dolphin.jpg',
-    heading: 'A playful morning',
+    heading: 'From breakfast to the blue',
     story: [
-      'The second day brought us into the water for a close encounter with a dolphin. The moment was full of curiosity, laughter, and the uncomplicated joy of doing something unforgettable together.',
-      'It became one of the journey’s brightest memories — a story told not through grand words, but through the expressions caught on the day.'
+      'Our second day began slowly at Kaleidoscope, with fruit, coffee and a very tempting chocolate fountain before the adventure gathered pace.',
+      'Then we traded the breakfast table for the water at Dolphin Bay. The lagoon, the bright vests and the dolphin beside us turned the morning into one of the journey’s most playful memories — all smiles, splashes and expressions that still tell the story on their own.'
     ],
-    media: [{ type: 'video', src: '../assets/videos/dolphin-encounter.mp4', poster: '../assets/posters/dolphin.jpg', caption: 'Dolphin Encounter · 1 min 43 sec' }],
+    sections: [
+      {
+        folder: 'Buffet at Kaleidoscope of Atlantis The Palm',
+        title: 'Starting the day around the buffet',
+        description: 'Kaleidoscope is Atlantis, The Palm’s international buffet restaurant, bringing together familiar breakfast favourites, fresh fruit, pastries and live cooking stations in one relaxed dining room. The variety made it an easy place to begin a full day: Hetty explored the fruit counter and settled in with coffee, while Gez found the chocolate fountain impossible to pass. It was a bright, unhurried start before changing into swimwear and heading toward the lagoon — a small chapter of plates, playful photographs and time together before the day’s main adventure began.',
+        source: 'https://www.atlantis.com/dubai/atlantis-the-palm/dining/kaleidoscope',
+        sourceLabel: 'Kaleidoscope at Atlantis Dubai',
+        media: [
+          { type: 'image', src: '../assets/images/oct5/IMG_1086.jpg', alt: 'Gez enjoying a sweet beside the chocolate fountain at Kaleidoscope', caption: 'Gez finds the chocolate fountain', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2192.jpg', alt: 'Hetty choosing fresh fruit from the Kaleidoscope breakfast buffet', caption: 'Fresh fruit for the morning' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2201.jpg', alt: 'Hetty smiling over a warm drink at the breakfast table', caption: 'Coffee before the adventure', layout: 'portrait' }
+        ]
+      },
+      {
+        folder: 'Dolphin Encounter at Aquaventure World',
+        title: 'Meeting a dolphin in the water',
+        description: 'Atlantis offers guided dolphin experiences in a purpose-built lagoon, with specialist staff introducing guests to the animals and directing each interaction. The Dolphin Encounter is designed for different ages and swimming abilities, with the required vest or wetsuit supplied for the session. Our photographs move from the first sight of dolphins crossing the calm water to the close moments that followed: standing together beside one, exchanging gentle kisses, holding a fin and swimming through the blue. For Gez and Hetty, it became a joyful sequence of surprise, trust and laughter beneath the Dubai sun.',
+        source: 'https://www.atlantis.com/dubai/atlantis-the-palm/faq',
+        sourceLabel: 'Atlantis dolphin experience information',
+        media: [
+          { type: 'image', src: '../assets/images/oct5/IMG_2212.jpg', alt: 'Hetty ready for the dolphin experience beside the Dolphin Bay sign at Atlantis', caption: 'Ready for Dolphin Bay', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_1102.jpg', alt: 'Dolphins swimming through the sunlit lagoon at Atlantis', caption: 'Our first look across the lagoon' },
+          { type: 'image', src: '../assets/images/oct5/42717919.jpg', alt: 'Gez and Hetty together in the lagoon beside a dolphin', caption: 'Together in the water' },
+          { type: 'image', src: '../assets/images/oct5/42718024.jpg', alt: 'A dolphin gently touching Hetty’s cheek in the lagoon', caption: 'A kiss for Hetty' },
+          { type: 'image', src: '../assets/images/oct5/42718044.jpg', alt: 'Hetty gently kissing the dolphin in the lagoon', caption: 'Hetty returns the kiss' },
+          { type: 'image', src: '../assets/images/oct5/42718083.jpg', alt: 'A dolphin gently touching Gez’s cheek in the lagoon', caption: 'A kiss for Gez' },
+          { type: 'image', src: '../assets/images/oct5/42718092.jpg', alt: 'Gez holding the dolphin’s fins during the guided encounter', caption: 'Face to face in the blue' },
+          { type: 'image', src: '../assets/images/oct5/42718223.jpg', alt: 'Gez swimming alongside the dolphin through the lagoon', caption: 'Gez moving through the water' },
+          { type: 'image', src: '../assets/images/oct5/42718257.jpg', alt: 'Hetty swimming alongside the dolphin through the lagoon', caption: 'Hetty moving through the water' },
+          { type: 'video', src: '../assets/videos/dolphin-encounter.mp4', poster: '../assets/posters/dolphin.jpg', caption: 'Dolphin Encounter · 1 min 43 sec', layout: 'wide' }
+        ]
+      }
+    ],
     prev: ['2019-10-04', 'A Birthday Above Dubai'], next: ['2019-10-06', 'A Quiet Chapter']
   },
   '2019-10-06': {
