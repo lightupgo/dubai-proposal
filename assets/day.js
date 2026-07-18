@@ -1,4 +1,4 @@
-const siteVersion = '20260718-1';
+const siteVersion = '20260718-2';
 
 const chapters = {
   '2019-10-04': {
@@ -15,7 +15,8 @@ const chapters = {
       {
         folder: 'Dubai Airport',
         title: 'Touchdown in Dubai',
-        description: 'Dubai International Airport was our doorway into the journey. Known by its code, DXB, it is Dubai’s primary international airport and one of the world’s great connecting hubs. Its three terminals bring together travellers from hundreds of destinations, turning every arrival hall into a meeting point between countries and stories. For us, its scale mattered less than the feeling of stepping through it together: the long flight was over, Dubai was suddenly real, and eight days of adventure waited beyond the doors. This first photograph marks the instant the trip stopped being a plan and became our shared memory.',
+        story: 'After the flight, our first photograph in Dubai caught the moment the trip became real. Gez and Hetty had arrived together, with eight days ahead and no idea how many memories the city would hold. The airport was only the doorway, but it marked the first step into the journey.',
+        description: 'Dubai International Airport, known by its code DXB, is Dubai’s primary international airport and a major global connecting hub. Its three passenger terminals link travellers with destinations across the world, while its arrival halls, transport connections and extensive services make it a principal gateway to the city. Terminal 3 was built for Emirates operations, and the airport’s scale reflects Dubai’s position between Europe, Asia and Africa. For visitors, passing through DXB is often the practical first chapter of a Dubai journey.',
         source: 'https://dubaiairports.ae/corporate/our-story/dxb-dubai-international',
         sourceLabel: 'Dubai Airports',
         media: [
@@ -25,7 +26,8 @@ const chapters = {
       {
         folder: 'Atlantis The Palm',
         title: 'Arriving at an icon',
-        description: 'Atlantis, The Palm opened in 2008 as the first resort on the outer crescent of Palm Jumeirah, giving Dubai’s palm-shaped island an unmistakable gateway. Its grand arch, marine-inspired interiors and blend of classical Arabian details make arriving feel theatrical before any activity begins. The resort brings rooms, restaurants, pools, beaches, an aquarium and Aquaventure together in one destination, so the day naturally moved between celebration and discovery. Here, Gez’s 3 October birthday carried into the trip with cake, laughter and our first look around the property — a fittingly joyful welcome to Dubai and the beginning of the story we were about to create.',
+        story: 'Gez’s birthday had been the day before, but the celebration followed us to Atlantis. A welcome cake, our first look from the room and a walk through the resort made arriving feel like the trip had truly begun. We moved from small birthday details into the aquarium blue, discovering the hotel one photograph at a time.',
+        description: 'Atlantis, The Palm opened in 2008 as the first resort on the outer crescent of Palm Jumeirah, giving Dubai’s palm-shaped island an unmistakable gateway. Its grand arch, marine-inspired interiors and blend of classical Arabian details make arriving feel theatrical before any activity begins. The resort combines guest rooms, restaurants, pools and beaches with The Lost Chambers Aquarium and the neighbouring Aquaventure waterpark. Its scale allows a stay to move easily between dining, relaxation and marine experiences without leaving the property.',
         source: 'https://www.atlantis.com/dubai/atlantis-the-palm',
         sourceLabel: 'Atlantis Dubai',
         media: [
@@ -41,7 +43,8 @@ const chapters = {
       {
         folder: 'Fly High Dubai',
         title: 'Taking the story into the sky',
-        description: 'Helicopter tours from Atlantis lift off beside Palm Jumeirah and reveal the idea behind Dubai’s coastline in a way the ground cannot. From above, the Palm’s fronds and crescent become clear, while the city’s beaches, towers and landmarks line up across the horizon. Shared flights and private charters follow the coast and skyline, turning familiar postcard views into a moving panorama through wide cabin windows. For Gez and Hetty, the flight added a burst of excitement to the birthday celebration: headsets on, city below, and the extraordinary geography of Dubai unfolding beneath us one landmark at a time.',
+        story: 'With headsets on and the helicopter lifting away from Atlantis, Dubai changed scale beneath us. The Palm’s shape appeared through the windows, followed by beaches, towers and open water. It was a thrilling continuation of Gez’s birthday celebration—and our first chance to see how extraordinary the city looked from above.',
+        description: 'Helicopter tours from Atlantis lift off beside Palm Jumeirah and reveal the design of Dubai’s coastline in a way the ground cannot. From above, the Palm’s fronds and crescent become clear, while the city’s beaches, towers and landmarks line up across the horizon. Shared flights and private charters follow routes along the coast and skyline, turning familiar postcard views into a moving panorama through the cabin windows. Flight length and the landmarks included vary according to the selected tour and operating conditions.',
         source: 'https://www.atlantis.com/dubai/atlantis-the-palm/experiences/tours-and-excursions',
         sourceLabel: 'Atlantis tours and excursions',
         media: [
@@ -54,7 +57,8 @@ const chapters = {
       {
         folder: 'Swimming at Atlantis The Palm',
         title: 'Slowing down by the water',
-        description: 'After the flight, the pace softened at Atlantis, where resort pools and a private beach stretch along the edge of Palm Jumeirah. The Palm Pool flows through the heart of the property in a connected lagoon-style design, creating room to swim, float and simply pause between adventures. It is the quieter side of a resort known for spectacle: warm Dubai light, water close at hand and time together without a schedule. Our swim became a gentle counterpoint to the helicopter’s rush — a moment to cool down, laugh, and take in the fact that the journey had only just begun.',
+        story: 'After the noise and excitement of the helicopter, we slowed everything down in the water. We swam together, took photographs with Atlantis behind us and stayed until the light softened around the pool. Hetty’s sunset portrait became the quiet ending to a day that had moved from arrival to sky and finally back to the water.',
+        description: 'Atlantis, The Palm has resort pools and a private beach along the edge of Palm Jumeirah. The Palm Pool sits at the heart of the property in a connected lagoon-style setting, providing space for swimming and relaxing between the resort’s busier attractions. Pool and beach access, opening times and guest conditions can vary, so current information is provided by the hotel. Together, these waterfront areas offer a quieter counterpart to the resort’s aquarium, waterpark, restaurants and organised excursions.',
         source: 'https://www.atlantis.com/dubai/atlantis-the-palm/experiences/pool-and-beach',
         sourceLabel: 'Atlantis pools and beach',
         media: [
@@ -66,7 +70,8 @@ const chapters = {
       {
         folder: 'Atlantis Lost Chambers',
         title: 'Walking into the underwater world',
-        description: 'The Lost Chambers Aquarium turns the legend of Atlantis into a sequence of atmospheric passageways, viewing windows and marine exhibits. Today the experience is presented through 14 chambers and a habitat of around 65,000 marine animals, with sharks, rays and schools of fish moving through the vast Ambassador Lagoon. The stonework and low blue light make the visit feel less like a conventional aquarium and more like exploring a submerged city. It was a fitting final chapter for our first day: after seeing Dubai from the sky and relaxing in the water, we ended by looking into another world beneath its surface.',
+        story: 'We ended the day by stepping into the blue of The Lost Chambers. After a colourful drink and a quick bite, we wandered through dim passageways and watched fish move beyond the glass. The aquarium gave the day one final change of atmosphere—a calm, otherworldly chapter after the brightness of the pool and sky.',
+        description: 'The Lost Chambers Aquarium turns the legend of Atlantis into a sequence of atmospheric passageways, viewing windows and marine exhibits. The experience is presented through 14 chambers and a habitat of around 65,000 marine animals, with sharks, rays and schools of fish moving through the vast Ambassador Lagoon. The stonework and low blue light give the attraction the feeling of exploring a submerged city rather than following a conventional aquarium route. Visiting details and available marine experiences are maintained by Atlantis Dubai.',
         source: 'https://www.atlantis.com/dubai/atlantis-the-palm/experiences',
         sourceLabel: 'Atlantis experiences',
         media: [
@@ -96,7 +101,8 @@ const chapters = {
       {
         folder: 'Buffet at Kaleidoscope of Atlantis The Palm',
         title: 'Starting the day around the buffet',
-        description: 'Kaleidoscope is Atlantis, The Palm’s international buffet restaurant, bringing together familiar breakfast favourites, fresh fruit, pastries and live cooking stations in one relaxed dining room. The variety made it an easy place to begin a full day: Hetty explored the fruit counter and settled in with coffee, while Gez found the chocolate fountain impossible to pass. It was a bright, unhurried start before changing into swimwear and heading toward the lagoon — a small chapter of plates, playful photographs and time together before the day’s main adventure began.',
+        story: 'The morning began without hurry. Hetty explored the fruit counter and warmed her hands around a cup while Gez made a very enthusiastic stop at the chocolate fountain. These simple breakfast photographs are part of the memory too: a playful start together before changing for the water and the day’s dolphin encounter.',
+        description: 'Kaleidoscope is Atlantis, The Palm’s international buffet restaurant, serving breakfast and dinner across a wide range of cuisines. Its buffet combines fresh fruit, pastries and familiar breakfast dishes with live cooking stations, while evening menus and themed nights draw on Mediterranean, Middle Eastern, Asian and other international flavours. The restaurant’s informal setting and broad selection suit families and guests who prefer to choose at their own pace. It is one of the resort’s principal buffet restaurants alongside Saffron.',
         source: 'https://www.atlantis.com/dubai/atlantis-the-palm/dining/kaleidoscope',
         sourceLabel: 'Kaleidoscope at Atlantis Dubai',
         media: [
@@ -108,7 +114,8 @@ const chapters = {
       {
         folder: 'Dolphin Encounter at Aquaventure World',
         title: 'Meeting a dolphin in the water',
-        description: 'Atlantis offers guided dolphin experiences in a purpose-built lagoon, with specialist staff introducing guests to the animals and directing each interaction. The Dolphin Encounter is designed for different ages and swimming abilities, with the required vest or wetsuit supplied for the session. Our photographs move from the first sight of dolphins crossing the calm water to the close moments that followed: standing together beside one, exchanging gentle kisses, holding a fin and swimming through the blue. For Gez and Hetty, it became a joyful sequence of surprise, trust and laughter beneath the Dubai sun.',
+        story: 'We arrived at Dolphin Bay ready for the water, then watched fins cross the sunlit lagoon before it was our turn to step in. The encounter became a sequence of smiles, gentle kisses and swimming side by side. Gez and Hetty each had their own close moments with the dolphin, and together they made one of the brightest memories of the trip.',
+        description: 'Atlantis offers guided dolphin experiences in purpose-built lagoons, with marine specialists introducing guests to the animals and directing each interaction. The Dolphin Encounter is designed for different ages and swimming abilities, and the required vest or wetsuit is supplied for the session. Experiences may include shallow-water contact and professionally photographed moments, while programme rules protect both participants and animals. Current bookings are managed through Aquaventure World and may include same-day access to other resort attractions, depending on the selected programme.',
         source: 'https://www.atlantis.com/dubai/atlantis-the-palm/faq',
         sourceLabel: 'Atlantis dolphin experience information',
         media: [
@@ -291,12 +298,16 @@ function sectionsMarkup(sections) {
           <p class="eyebrow gold">${section.folder}</p>
           <h2>${section.title}</h2>
         </div>
-        <div class="section-description">
-          <p>${section.description}</p>
-          <a href="${section.source}" target="_blank" rel="noreferrer">About the venue · ${section.sourceLabel} <span aria-hidden="true">↗</span></a>
+        <div class="section-story">
+          <p>${section.story}</p>
         </div>
       </div>
       ${mediaMarkup(section.media)}
+      <aside class="venue-note" aria-label="About ${section.folder}">
+        <p class="eyebrow gold">About the place</p>
+        <p>${section.description}</p>
+        <a href="${section.source}" target="_blank" rel="noreferrer">Venue reference · ${section.sourceLabel} <span aria-hidden="true">↗</span></a>
+      </aside>
     </section>`).join('')}</div>`;
 }
 
