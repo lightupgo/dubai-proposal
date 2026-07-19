@@ -1,4 +1,4 @@
-const siteVersion = '20260718-2';
+const siteVersion = '20260719-1';
 
 const chapters = {
   '2019-10-04': {
@@ -86,16 +86,17 @@ const chapters = {
         ]
       }
     ],
-    prev: null, next: ['2019-10-05', 'Dolphin Encounter']
+    prev: null, next: ['2019-10-05', 'From Dolphins to Nightfall']
   },
   '2019-10-05': {
-    day: 'Day two', date: '05 October 2019', title: 'Dolphin Encounter',
-    lead: 'A colourful breakfast, a sunlit lagoon, and a dolphin encounter we would never forget.',
+    day: 'Day two', date: '05 October 2019', title: 'From Dolphins to Nightfall',
+    lead: 'Breakfast, dolphins, waterpark laughter, Lebanese dinner and a night ride across the Palm.',
     image: '../assets/posters/dolphin.jpg',
-    heading: 'From breakfast to the blue',
+    heading: 'A full day at Atlantis',
     story: [
       'Our second day began slowly at Kaleidoscope, with fruit, coffee and a very tempting chocolate fountain before the adventure gathered pace.',
-      'Then we traded the breakfast table for the water at Dolphin Bay. The lagoon, the bright vests and the dolphin beside us turned the morning into one of the journey’s most playful memories — all smiles, splashes and expressions that still tell the story on their own.'
+      'Then we traded the breakfast table for the water. The dolphin encounter became one of the journey’s brightest memories, and Aquaventure kept us laughing through waves, tubes and a long drift along the river.',
+      'As evening arrived, we changed for Lebanese dinner at Ayamna, shared a table full of dishes and watched the restaurant come alive with music and dance. A monorail ride across Palm Jumeirah — followed by a playful supermarket stop — carried the day gently into night.'
     ],
     sections: [
       {
@@ -130,6 +131,53 @@ const chapters = {
           { type: 'image', src: '../assets/images/oct5/42718257.jpg', alt: 'Hetty swimming alongside the dolphin through the lagoon', caption: 'Hetty moving through the water' },
           { type: 'video', src: '../assets/videos/dolphin-encounter.mp4', poster: '../assets/posters/dolphin.jpg', caption: 'Dolphin Encounter · 1 min 43 sec', layout: 'wide' }
         ]
+      },
+      {
+        folder: 'Atlantis Aquaventure',
+        title: 'Letting the water carry us',
+        story: 'Still in our swimwear after the dolphins, we let the day continue through Aquaventure. Gez took on the Surf’s Up wave, Hetty paused with the skyline behind her, and then we climbed into tubes together. Between the rush of the rides and the easy drift of the river, the afternoon became a playful sequence of water, laughter and close-up photographs.',
+        description: 'Aquaventure Waterpark is part of Aquaventure World at Atlantis Dubai. The resort describes the destination as more than 105 slides, rides and attractions, ranging from high-speed towers to family areas and lazy rivers. Hotel stays at Atlantis, The Palm currently include waterpark access, while day visitors can book separately. Height, age and safety restrictions apply to certain rides, and lockers and towels are available for rental. The mix of major drops, bodyboarding waves and slower river routes allows a visit to shift between adrenaline and floating at an easier pace.',
+        source: 'https://www.atlantis.com/dubai/atlantis-the-palm/experiences',
+        sourceLabel: 'Aquaventure World at Atlantis Dubai',
+        media: [
+          { type: 'image', src: '../assets/images/oct5/IMG_2227.jpg', alt: 'Gez bodyboarding down the Surf’s Up wave at Aquaventure', caption: 'Gez rides the Surf’s Up wave' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2267.jpg', alt: 'Hetty ready for Aquaventure with the Dubai skyline behind her', caption: 'Hetty ready for the waterpark', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2309.jpg', alt: 'Gez and Hetty together inside a clear water tunnel at Aquaventure', caption: 'Together inside the water tunnel' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2329.jpg', alt: 'Gez and Hetty smiling together in their ride tube', caption: 'Ready to ride together', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2342.jpg', alt: 'Gez and Hetty joining a line of tubes through the Aquaventure river', caption: 'Joining the river of rafts', layout: 'portrait' }
+        ]
+      },
+      {
+        folder: 'Ayamna Restaurant in Atlantis',
+        title: 'Sharing dinner to a live rhythm',
+        story: 'After a day in the water, we changed and settled into the soft evening light at Ayamna. The table filled with warm bread, mezze, salads and a generous mixed grill, turning dinner into something to share slowly. Music and a live dancer brought movement into the room, and one last photograph beneath the Ayamna sign closed our evening at Atlantis.',
+        description: 'Ayamna is Atlantis, The Palm’s Lebanese restaurant, set in a marble dining room with a garden terrace. Its menus are built around Lebanese hospitality and dishes intended for sharing: cold and hot mezze, chargrilled meats, seafood, fresh breads and traditional sweets. Atlantis also presents set menus that bring several courses together as a communal feast. The setting is more refined than the daytime waterpark, while the generous table format keeps the experience social. Reservations, menus, opening hours and entertainment can change, so the hotel’s current dining page is the best reference.',
+        source: 'https://www.atlantis.com/dubai/atlantis-the-palm/dining/ayamna',
+        sourceLabel: 'Ayamna at Atlantis Dubai',
+        media: [
+          { type: 'image', src: '../assets/images/oct5/IMG_2496.jpg', alt: 'Gez seated at the dinner table inside Ayamna', caption: 'Gez settles in for dinner', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2497.jpg', alt: 'Hetty seated at the dinner table inside Ayamna', caption: 'Hetty across the table', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2506.jpg', alt: 'Hetty smiling behind a table full of Lebanese mezze and warm bread', caption: 'A Lebanese spread made for sharing', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2512.jpg', alt: 'Gez presenting a mixed grill platter at Ayamna', caption: 'Gez with the mixed grill', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2562.jpg', alt: 'Gez and Hetty together beneath the Ayamna restaurant sign', caption: 'One last photograph at Ayamna' },
+          { type: 'video', src: '../assets/videos/ayamna-dance.mp4', poster: '../assets/posters/ayamna-dance.jpg', caption: 'Live music and dance at Ayamna · 25 sec', layout: 'portrait' }
+        ]
+      },
+      {
+        folder: 'The Palm Monorail',
+        title: 'Riding the Palm into the night',
+        story: 'We left Atlantis beneath the station lights, with Hetty waving outside and Gez holding up our Palm Jumeirah tickets once we were aboard. The carriage was quiet as the monorail carried us away from Aquaventure. We stepped off at Al Ittihad Park and ended the outing with an ordinary, funny little supermarket stop — sparkling water for Hetty and a very enthusiastic box of ice creams for Gez.',
+        description: 'Opened in 2009, the 5.5-kilometre Palm Monorail is an elevated route across Palm Jumeirah. The official current station list connects Palm Gateway, Al Ittihad Park, Palm Jumeirah Mall and Atlantis Aquaventure. The Atlantis station sits beside the waterpark entrance, while Al Ittihad Park connects to Golden Mile Galleria and Palm West Beach. Tickets can be bought online or at station customer-service desks. Above road level, the ride also acts as a viewing corridor through the island, making it both practical transport and part of the sightseeing journey.',
+        source: 'https://www.palmmonorail.com/stations',
+        sourceLabel: 'The Palm Monorail stations',
+        media: [
+          { type: 'image', src: '../assets/images/oct5/IMG_2529.jpg', alt: 'Hetty waving outside Atlantis Aquaventure Monorail Station at night', caption: 'Leaving Atlantis Aquaventure Station', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2532.jpg', alt: 'Palm Jumeirah Monorail travel cards showing the Atlantis route', caption: 'Our tickets across the Palm', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2540.jpg', alt: 'Gez holding the monorail tickets inside the quiet carriage', caption: 'Gez aboard the Palm Monorail', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2542.jpg', alt: 'Hetty arriving at Al Ittihad Park Monorail Station', caption: 'A stop at Al Ittihad Park', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2551.jpg', alt: 'Hetty choosing sparkling water during an evening supermarket stop', caption: 'Sparkling water for Hetty' },
+          { type: 'image', src: '../assets/images/oct5/IMG_2554.jpg', alt: 'Gez excitedly holding a box of ice creams in the supermarket', caption: 'Ice creams for Gez', layout: 'portrait' }
+        ]
       }
     ],
     prev: ['2019-10-04', 'A Birthday Above Dubai'], next: ['2019-10-06', 'A Quiet Chapter']
@@ -139,7 +187,7 @@ const chapters = {
     lead: 'Some memories wait beyond the camera, held first in the people who lived them.',
     heading: 'Space for the details',
     story: ['This page is waiting for the photographs, messages, and small details that will bring 6 October back into view.', 'For now, it remains a quiet pause in the journey — a reminder that not every meaningful moment announces itself.'],
-    media: [], prev: ['2019-10-05', 'Dolphin Encounter'], next: ['2019-10-07', 'Between Adventures']
+    media: [], prev: ['2019-10-05', 'From Dolphins to Nightfall'], next: ['2019-10-07', 'Between Adventures']
   },
   '2019-10-07': {
     day: 'Day four', date: '07 October 2019', title: 'Between Adventures',
