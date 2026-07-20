@@ -1,4 +1,4 @@
-const siteVersion = '20260720-1';
+const siteVersion = '20260720-2';
 
 const chapters = {
   '2019-10-04': {
@@ -180,17 +180,18 @@ const chapters = {
         ]
       }
     ],
-    prev: ['2019-10-04', 'A Birthday Above Dubai'], next: ['2019-10-06', 'Into the Dubai Desert']
+    prev: ['2019-10-04', 'A Birthday Above Dubai'], next: ['2019-10-06', 'From Desert Sand to City Lights']
   },
   '2019-10-06': {
-    day: 'Day three', date: '06 October 2019', title: 'Into the Dubai Desert',
-    lead: 'Quad bikes, rolling dunes, sandboarding and a camel ride carried us far beyond the city.',
-    image: '../assets/images/oct6/IMG_2708.jpg',
-    heading: 'A day written in sand',
+    day: 'Day three', date: '06 October 2019', title: 'From Desert Sand to City Lights',
+    lead: 'A desert adventure carried us back to Dubai Mall, dinner above the city and fountains glowing beneath us.',
+    image: '../assets/images/oct6/IMG_3013.jpg',
+    heading: 'From the dunes to the night sky',
     story: [
       'After two days around Atlantis, we traded the water and skyline for a completely different side of Dubai. The city fell away, the road opened into dunes, and the day became a sequence of sand, speed and wide horizons.',
       'We began on separate quad bikes, then climbed into a 4x4 for the desert safari. Between the rushes came the moments we remember most clearly: posing together on the dunes, jumping into an empty blue sky and leaving our hands beside a heart drawn in the sand.',
-      'Sandboards carried us down the slopes before a camel ride slowed the pace. By the end, we had crossed the desert in almost every way we could — laughing, holding on and collecting another day that felt entirely our own.'
+      'Sandboards carried us down the slopes before a camel ride slowed the pace. Then the day changed direction again: we returned to Downtown Dubai, wandered through the many worlds inside Dubai Mall and watched the Burj Khalifa rise above us.',
+      'At.mosphere lifted the evening high over the city. An anniversary dessert waited at the table, Dubai turned to lights beyond the glass, and the fountain moved far below — a quiet, glittering ending to a day that had begun with wheels in the sand.'
     ],
     sections: [
       {
@@ -248,6 +249,53 @@ const chapters = {
           { type: 'image', src: '../assets/images/oct6/IMG_2769.jpg', alt: 'Gez and Hetty seated together on a camel in the Dubai desert', caption: 'Together at the desert’s pace' },
           { type: 'image', src: '../assets/images/oct6/IMG_2776.jpg', alt: 'Gez and Hetty waving from a camel beneath the open sky', caption: 'One last wave from the dunes', layout: 'portrait' }
         ]
+      },
+      {
+        folder: 'Dubai Mall',
+        title: 'Returning to the heart of Downtown',
+        story: 'We returned from the desert and stepped into the bright, polished spaces of Dubai Mall. Still carrying a little of the day’s playful energy, we stopped for an enormous plate of nachos and an even taller milkshake, wandered through Fashion Avenue and paused at the aquarium, Dubai Dino and the ice rink. At the waterfall, a red heart framed us together before we walked outside and saw Burj Khalifa waiting in the evening light.',
+        description: 'Dubai Mall sits in Downtown Dubai beside Burj Khalifa and welcomes visitors into a destination that extends far beyond shopping. Its official guide lists more than 1,200 retail outlets, over 200 dining experiences and major attractions including Dubai Aquarium & Underwater Zoo and Dubai Ice Rink. Fashion Avenue brings luxury stores and contemporary architecture together, while public installations and landmarks create memorable pauses between them. The mall also connects directly with the surrounding Downtown district, making it an easy starting point for views of Burj Khalifa and the Dubai Fountain.',
+        source: 'https://www.thedubaimall.com/en/about-us/about-the-dubai-mall',
+        sourceLabel: 'Dubai Mall official guide',
+        media: [
+          { type: 'image', src: '../assets/images/oct6/IMG_1109.jpg', alt: 'Gez and Hetty together overlooking Burj Lake and Downtown Dubai', caption: 'Together above Burj Lake', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2805.jpg', alt: 'Gez and Hetty arriving at Fashion Avenue inside Dubai Mall', caption: 'Arriving at Fashion Avenue' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2824.jpg', alt: 'Gez reacting playfully to a large plate of nachos', caption: 'Lunch arrives in generous proportions', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2834.jpg', alt: 'Hetty smiling beside a tall chocolate milkshake topped with cake and an ice-cream cone', caption: 'A dessert almost too tall to begin', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2843.jpg', alt: 'A broad daytime view of Burj Lake from Dubai Mall', caption: 'Burj Lake beneath the afternoon light' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2850.jpg', alt: 'Gez posing beside the colourful glass frontage of a store in Dubai Mall', caption: 'Gez brings the desert energy indoors' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2853.jpg', alt: 'Gez standing outside the Apple Store inside Dubai Mall', caption: 'A quick stop outside Apple' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2861.jpg', alt: 'Hetty standing beside an illuminated Pro display inside Dubai Mall', caption: 'Hetty beside the new Pro display' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2863.jpg', alt: 'Gez posing against a geometric window overlooking Burj Lake', caption: 'Gez framed by Downtown Dubai', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2884.jpg', alt: 'Hetty standing against a geometric window overlooking Burj Lake', caption: 'Hetty framed by the lake', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2913.jpg', alt: 'Hetty standing beside the large aquarium window inside Dubai Mall', caption: 'Another world of blue inside the mall' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2923.jpg', alt: 'Hetty standing beside the Dubai Dino skeleton', caption: 'Meeting Dubai Dino' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2930.jpg', alt: 'Information display explaining the length of the Dubai Dino skeleton', caption: 'Eighty feet from head to tail' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2934.jpg', alt: 'Gez posing playfully beneath the long neck of Dubai Dino', caption: 'Gez meets the giant', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2942.jpg', alt: 'Hetty standing beside Dubai Ice Rink', caption: 'A pause beside the ice rink' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2957.jpg', alt: 'Gez and Hetty posing inside a red heart in front of the Dubai Mall waterfall', caption: 'Together inside the heart', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2969.jpg', alt: 'Gez standing outside Dubai Mall with Burj Khalifa rising behind him', caption: 'Burj Khalifa in the evening light', layout: 'portrait' }
+        ]
+      },
+      {
+        folder: 'At.Mosphere at Burj Khalifa and Dubai Fountain',
+        title: 'Taking our anniversary into the sky',
+        story: 'We entered through Armani Hotel and rose to At.mosphere, where Downtown Dubai stretched beneath the windows. Daylight faded while we looked down across Burj Lake, and the table became its own small celebration with glasses raised and an anniversary dessert between us. Later, the roads glowed, the city sparkled and the Dubai Fountain moved far below. Back at ground level, one last look up at Burj Khalifa closed the night.',
+        description: 'At.mosphere is Burj Khalifa’s sky-high restaurant and lounge on level 122, pairing modern French dining with panoramic views across Downtown Dubai. From its windows, Burj Lake and the Dubai Fountain sit directly below the tower. The fountain is a choreographed water, light and music attraction at the base of Burj Khalifa, designed by WET and set across the lake beside Dubai Mall. Seen from above, its illuminated patterns become part of the cityscape; from the promenade, visitors can watch performances at water level or choose closer boardwalk and traditional abra experiences.',
+        source: 'https://www.burjkhalifa.ae/experiences/',
+        sourceLabel: 'Burj Khalifa official experiences',
+        media: [
+          { type: 'image', src: '../assets/images/oct6/IMG_2974.jpg', alt: 'The entrance sign for Armani Hotel Dubai', caption: 'Entering through Armani Hotel' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2986.jpg', alt: 'Hetty seated beside the high window at At.mosphere with Downtown Dubai below', caption: 'Hetty beside the city view', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2991.jpg', alt: 'Burj Lake and Downtown Dubai seen from high inside Burj Khalifa', caption: 'Downtown Dubai far below', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2997.jpg', alt: 'A table light at At.mosphere casting the silhouette of Burj Khalifa', caption: 'Burj Khalifa in miniature', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_3013.jpg', alt: 'Gez and Hetty celebrating at At.mosphere with an anniversary dessert', caption: 'Our anniversary above Dubai' },
+          { type: 'image', src: '../assets/images/oct6/IMG_1137.jpg', alt: 'Downtown Dubai illuminated at night as seen from Burj Khalifa', caption: 'The city becomes a field of lights' },
+          { type: 'image', src: '../assets/images/oct6/IMG_3023.jpg', alt: 'Gez and Hetty taking a low-angle selfie beside Burj Khalifa at night', caption: 'Back beneath the tower', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_3024.jpg', alt: 'Burj Khalifa illuminated against the night sky', caption: 'Burj Khalifa after dark', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_3046.jpg', alt: 'Gez posing playfully beneath an Apple logo at night', caption: 'One last playful stop', layout: 'portrait' },
+          { type: 'video', src: '../assets/videos/oct6-dubai-fountain.mp4', poster: '../assets/posters/oct6-dubai-fountain.jpg', caption: 'Dubai Fountain from above · 51 sec', layout: 'wide' }
+        ]
       }
     ],
     prev: ['2019-10-05', 'From Dolphins to Nightfall'], next: ['2019-10-07', 'Between Adventures']
@@ -257,7 +305,7 @@ const chapters = {
     lead: 'The story continued in the moments between the landmarks.',
     heading: 'A page to return to',
     story: ['This chapter is reserved for the memories of 7 October — the places visited, the words exchanged, and the details that made the day ours.', 'As more material finds its way here, this page will grow into its place in the journey.'],
-    media: [], prev: ['2019-10-06', 'Into the Dubai Desert'], next: ['2019-10-08', 'Almost There']
+    media: [], prev: ['2019-10-06', 'From Desert Sand to City Lights'], next: ['2019-10-08', 'Almost There']
   },
   '2019-10-08': {
     day: 'Day five', date: '08 October 2019', title: 'Almost There',
