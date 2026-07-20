@@ -1,4 +1,4 @@
-const siteVersion = '20260719-1';
+const siteVersion = '20260720-1';
 
 const chapters = {
   '2019-10-04': {
@@ -180,21 +180,84 @@ const chapters = {
         ]
       }
     ],
-    prev: ['2019-10-04', 'A Birthday Above Dubai'], next: ['2019-10-06', 'A Quiet Chapter']
+    prev: ['2019-10-04', 'A Birthday Above Dubai'], next: ['2019-10-06', 'Into the Dubai Desert']
   },
   '2019-10-06': {
-    day: 'Day three', date: '06 October 2019', title: 'A Quiet Chapter',
-    lead: 'Some memories wait beyond the camera, held first in the people who lived them.',
-    heading: 'Space for the details',
-    story: ['This page is waiting for the photographs, messages, and small details that will bring 6 October back into view.', 'For now, it remains a quiet pause in the journey — a reminder that not every meaningful moment announces itself.'],
-    media: [], prev: ['2019-10-05', 'From Dolphins to Nightfall'], next: ['2019-10-07', 'Between Adventures']
+    day: 'Day three', date: '06 October 2019', title: 'Into the Dubai Desert',
+    lead: 'Quad bikes, rolling dunes, sandboarding and a camel ride carried us far beyond the city.',
+    image: '../assets/images/oct6/IMG_2708.jpg',
+    heading: 'A day written in sand',
+    story: [
+      'After two days around Atlantis, we traded the water and skyline for a completely different side of Dubai. The city fell away, the road opened into dunes, and the day became a sequence of sand, speed and wide horizons.',
+      'We began on separate quad bikes, then climbed into a 4x4 for the desert safari. Between the rushes came the moments we remember most clearly: posing together on the dunes, jumping into an empty blue sky and leaving our hands beside a heart drawn in the sand.',
+      'Sandboards carried us down the slopes before a camel ride slowed the pace. By the end, we had crossed the desert in almost every way we could — laughing, holding on and collecting another day that felt entirely our own.'
+    ],
+    sections: [
+      {
+        folder: 'Quad Bike at Desert',
+        title: 'Finding our own tracks',
+        story: 'The day began with helmets on and a blue quad bike beneath each of us. Hetty set off across the open sand, Gez followed, and soon the neat starting area gave way to tyre tracks and dunes. We stopped long enough for photographs and one helmeted selfie together, carrying the excitement of the first ride into everything that followed.',
+        description: 'Quad bikes are four-wheeled all-terrain vehicles controlled from the handlebars and are a popular way to explore Dubai’s desert landscape. Guided outings range from introductory circuits to longer routes across the dunes, with single- and double-seat options depending on the operator. Many quad-bike experiences are offered as part of a wider desert safari that may also include dune driving, sandboarding or camel riding. Conditions, age limits, protective equipment and insurance differ by provider, so riders should follow the operator’s safety briefing and book with a reputable company.',
+        source: 'https://www.visitdubai.com/en/stories/quad-biking-in-dubai/',
+        sourceLabel: 'Visit Dubai quad biking guide',
+        media: [
+          { type: 'image', src: '../assets/images/oct6/IMG_2587.jpg', alt: 'Gez and Hetty beside a blue quad bike wearing helmets in the Dubai desert', caption: 'Helmets on and ready to ride' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2599.jpg', alt: 'Hetty riding a blue quad bike across the sand', caption: 'Hetty finds her line across the sand' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2608.jpg', alt: 'Gez seated on a blue quad bike in the Dubai desert', caption: 'Gez ready for his turn' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2615.jpg', alt: 'Gez and Hetty taking a helmeted selfie on their quad bikes', caption: 'A quick photograph between the tracks' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2621.jpg', alt: 'Hetty raising one hand from her quad bike with the dunes behind her', caption: 'One hand up beneath the open sky' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2627.jpg', alt: 'Gez and Hetty trying traditional clothing after the quad-bike ride', caption: 'A playful stop before the safari', layout: 'portrait' },
+          { type: 'video', src: '../assets/videos/oct6-quad-hetty.mp4', poster: '../assets/posters/oct6-quad-hetty.jpg', caption: 'Hetty riding across the sand · 21 sec', layout: 'wide' },
+          { type: 'video', src: '../assets/videos/oct6-quad-gez.mp4', poster: '../assets/posters/oct6-quad-gez.jpg', caption: 'Gez taking his turn · 14 sec', layout: 'wide' }
+        ]
+      },
+      {
+        folder: 'Dubai Desert Safari',
+        title: 'Playing among the dunes',
+        story: 'Back in the 4x4, the smooth road disappeared beneath a landscape of steep sand. The ride carried us up and down the dunes before we stepped out into the wind and bright afternoon. We posed, jumped, threw sand into the air and drew a heart around our hands, then took turns sliding down the slope on sandboards. It was adventurous and wonderfully silly in equal measure.',
+        description: 'A typical Dubai desert safari begins with a hotel pickup in a 4x4 and a drive beyond the city to the dunes. With an experienced driver, the route can include dune driving and stops for photographs before continuing to a desert camp or activity area. Sandboarding, camel rides, refreshments and cultural experiences are common additions, although each operator builds its own itinerary. Morning and evening excursions are available throughout the year. Visit Dubai recommends booking through a reputable company, because driving on sand requires the correct vehicle, preparation and local experience.',
+        source: 'https://www.visitdubai.com/en/places-to-visit/desert-safari-dubai',
+        sourceLabel: 'Visit Dubai desert safari guide',
+        media: [
+          { type: 'image', src: '../assets/images/oct6/IMG_2631.jpg', alt: 'Gez and Hetty leaning together inside the desert safari vehicle', caption: 'Together between the rides' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2652.jpg', alt: 'Gez and Hetty sitting together on a Dubai sand dune', caption: 'Our first pause on the dunes', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2664.jpg', alt: 'Gez holding Hetty as she opens her arms on a sand dune', caption: 'Arms open to the desert sky', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2665.jpg', alt: 'Gez and Hetty jumping together over the sand', caption: 'Into the air together', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2666.jpg', alt: 'Gez and Hetty smiling in mid-air above the dune', caption: 'The jump that landed perfectly', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2671.jpg', alt: 'Hetty posing in the wind on a sand dune', caption: 'Hetty in the desert wind', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2675.jpg', alt: 'Hetty throwing a stream of sand into the air', caption: 'Drawing an arc through the air', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2689.jpg', alt: 'Hetty jumping above Gez on a sand dune', caption: 'Hetty takes to the sky', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2702.jpg', alt: 'Portrait of Hetty among the dunes', caption: 'Hetty among the golden dunes', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2708.jpg', alt: 'Gez and Hetty taking a selfie with their safari vehicle behind them', caption: 'A pause beside our desert ride' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2729.jpg', alt: 'Gez and Hetty placing their hands beside a heart drawn in the sand', caption: 'Our hands beside a heart in the sand' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2743.jpg', alt: 'Gez and Hetty with their desert safari guide', caption: 'With the guide who led us across the dunes' },
+          { type: 'video', src: '../assets/videos/oct6-dune-drive.mp4', poster: '../assets/posters/oct6-dune-drive.jpg', caption: 'Across the dunes by 4x4 · 1 min 10 sec', layout: 'wide' },
+          { type: 'video', src: '../assets/videos/oct6-sandboard-hetty.mp4', poster: '../assets/posters/oct6-sandboard-hetty.jpg', caption: 'Hetty sandboarding down the dune · 11 sec', layout: 'wide' },
+          { type: 'video', src: '../assets/videos/oct6-sandboard-gez.mp4', poster: '../assets/posters/oct6-sandboard-gez.jpg', caption: 'Gez follows down the slope · 9 sec', layout: 'wide' }
+        ]
+      },
+      {
+        folder: 'Camel Ride',
+        title: 'Letting the desert slow us down',
+        story: 'After engines, jumps and sandboards, the final ride changed the rhythm. Gez and Hetty climbed onto the same camel and moved gently through the dunes, the open desert stretching behind them. We waved for the camera, held on together and let the day finish at a slower pace — one last shared adventure before returning to the city.',
+        description: 'Camels have long been part of life and travel across the Arabian desert, and riding one offers a slower way to experience the dunes. Dubai’s desert programmes range from short introductory rides to longer guided treks, often as part of a safari with dune driving, sandboarding and time at a camp. Specialist centres also teach first-time riders how to mount, balance and interact with the animals. The experience connects today’s visitors with an important strand of Bedouin heritage, while reputable operators place trained guides and animal care at the centre of the ride.',
+        source: 'https://www.visitdubai.com/en/places-to-visit/arabian-desert-camel-riding-center',
+        sourceLabel: 'Visit Dubai camel riding guide',
+        media: [
+          { type: 'image', src: '../assets/images/oct6/IMG_2759.jpg', alt: 'Gez and Hetty taking a selfie from their camel ride', caption: 'Setting off together' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2769.jpg', alt: 'Gez and Hetty seated together on a camel in the Dubai desert', caption: 'Together at the desert’s pace' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2776.jpg', alt: 'Gez and Hetty waving from a camel beneath the open sky', caption: 'One last wave from the dunes', layout: 'portrait' }
+        ]
+      }
+    ],
+    prev: ['2019-10-05', 'From Dolphins to Nightfall'], next: ['2019-10-07', 'Between Adventures']
   },
   '2019-10-07': {
     day: 'Day four', date: '07 October 2019', title: 'Between Adventures',
     lead: 'The story continued in the moments between the landmarks.',
     heading: 'A page to return to',
     story: ['This chapter is reserved for the memories of 7 October — the places visited, the words exchanged, and the details that made the day ours.', 'As more material finds its way here, this page will grow into its place in the journey.'],
-    media: [], prev: ['2019-10-06', 'A Quiet Chapter'], next: ['2019-10-08', 'Almost There']
+    media: [], prev: ['2019-10-06', 'Into the Dubai Desert'], next: ['2019-10-08', 'Almost There']
   },
   '2019-10-08': {
     day: 'Day five', date: '08 October 2019', title: 'Almost There',
