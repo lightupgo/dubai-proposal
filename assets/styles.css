@@ -27,14 +27,26 @@ a { color: inherit; }
 .hero { position: relative; min-height: 92vh; padding: 34px clamp(24px, 5.5vw, 88px) 72px; overflow: hidden; color: var(--cream); background: var(--night); isolation: isolate; }
 .hero::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url("images/proposal-kiss.jpg") center 38% / cover no-repeat; filter: saturate(.72) contrast(1.04); }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(5, 9, 14, .98) 0%, rgba(5, 9, 14, .86) 46%, rgba(5, 9, 14, .25) 76%), linear-gradient(0deg, rgba(5, 9, 14, .72), transparent 50%); }
-.site-nav { display: flex; align-items: center; justify-content: space-between; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,.18); }
+.site-nav { display: grid; grid-template-columns: 110px minmax(250px, 1fr) auto; align-items: center; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,.18); }
 .monogram { color: var(--cream); font: italic 26px/1 var(--serif); text-decoration: none; }
 .monogram span { color: var(--gold-pale); }
+.trip-mark { display: flex; align-items: center; justify-self: start; gap: 13px; min-width: 0; color: rgba(255,255,255,.76); font-size: 10px; font-weight: 700; letter-spacing: .2em; line-height: 1; text-transform: uppercase; }
+.trip-mark::before { content: ""; flex: 0 0 31px; width: 31px; height: 1px; background: var(--gold); }
+.trip-mark .future { color: var(--gold-pale); font: italic 400 11px/1 var(--serif); letter-spacing: .08em; text-transform: none; }
+.trip-arrow { position: relative; width: 32px; height: 9px; margin-left: 2px; border-top: 1px solid rgba(221,200,165,.75); transform: translateY(4px); }
+.trip-arrow::after { content: ""; position: absolute; top: -4px; right: 0; width: 7px; height: 7px; border-top: 1px solid rgba(221,200,165,.75); border-right: 1px solid rgba(221,200,165,.75); transform: rotate(45deg); }
 .nav-meta { display: flex; gap: 36px; color: rgba(255,255,255,.62); font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
 .hero-copy { width: min(760px, 72vw); padding-top: clamp(92px, 14vh, 150px); }
 .hero h1 { margin: 22px 0 32px; font: 400 clamp(68px, 9.7vw, 154px)/.82 var(--serif); letter-spacing: -.07em; }
 .hero h1 em { color: var(--gold-pale); font-weight: 400; }
 .hero-intro { max-width: 585px; margin: 0; color: rgba(255,255,255,.72); font: 18px/1.7 var(--serif); }
+.horizon-signature { position: absolute; right: clamp(24px, 5.5vw, 88px); bottom: 116px; width: min(430px, 38vw); color: var(--gold-pale); }
+.signature-line { position: relative; width: 100%; height: 1px; margin-bottom: 15px; background: linear-gradient(90deg, transparent 0%, rgba(185,145,92,.92) 19%, rgba(185,145,92,.48) 91%, transparent 100%); }
+.signature-line::before { content: ""; position: absolute; left: 48%; top: 50%; width: 7px; height: 7px; border: 1px solid var(--gold-pale); border-radius: 50%; background: rgba(11,16,23,.82); box-shadow: 0 0 0 5px rgba(185,145,92,.1); transform: translate(-50%, -50%); }
+.signature-line::after { content: ""; position: absolute; right: 2px; top: -3px; width: 7px; height: 7px; border-top: 1px solid var(--gold-pale); border-right: 1px solid var(--gold-pale); transform: rotate(45deg); }
+.signature-copy { display: flex; align-items: baseline; justify-content: space-between; gap: 22px; }
+.signature-copy strong { font: italic 400 22px/1.15 var(--serif); letter-spacing: .015em; }
+.signature-copy span { color: rgba(255,255,255,.46); font-size: 9px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; white-space: nowrap; }
 .scroll-cue { position: absolute; right: clamp(24px, 5.5vw, 88px); bottom: 46px; display: flex; align-items: center; gap: 18px; color: rgba(255,255,255,.68); font-size: 10px; font-weight: 700; letter-spacing: .18em; text-decoration: none; text-transform: uppercase; }
 .scroll-cue::before { content: ""; width: 58px; height: 1px; background: var(--gold); }
 .scroll-cue i { font-style: normal; transition: transform .25s ease; }
@@ -88,6 +100,13 @@ a { color: inherit; }
 
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.is-visible { opacity: 1; transform: none; }
+
+@media (max-width: 1100px) and (min-width: 761px) {
+  .site-nav { grid-template-columns: 90px minmax(160px, 1fr) auto; }
+  .trip-mark .future, .trip-arrow { display: none; }
+  .nav-meta { gap: 20px; }
+  .horizon-signature { width: min(400px, 46vw); }
+}
 
 /* Day pages */
 .day-page { min-height: 100vh; background: var(--paper); }
@@ -167,11 +186,16 @@ a { color: inherit; }
   .hero { min-height: 88vh; padding-bottom: 54px; }
   .hero::before { background-position: 64% center; }
   .hero::after { background: linear-gradient(90deg, rgba(5,9,14,.92), rgba(5,9,14,.5)), linear-gradient(0deg, rgba(5,9,14,.8), transparent 65%); }
-  .nav-meta span:first-child { display: none; }
-  .nav-meta { gap: 0; }
+  .site-nav { grid-template-columns: 76px 1fr; }
+  .trip-mark { justify-self: end; font-size: 8px; letter-spacing: .16em; }
+  .trip-mark::before, .trip-mark .future, .trip-arrow { display: none; }
+  .nav-meta { display: none; }
   .hero-copy { width: 100%; padding-top: 110px; }
   .hero h1 { font-size: clamp(60px, 20vw, 84px); }
   .hero-intro { font-size: 16px; }
+  .horizon-signature { right: 24px; bottom: 108px; width: calc(100% - 48px); }
+  .signature-copy strong { font-size: 18px; }
+  .signature-copy span { font-size: 7px; letter-spacing: .14em; }
   .scroll-cue { left: 24px; right: auto; }
   .journey-intro { display: block; }
   .journey-intro > p { margin-top: 28px; font-size: 17px; }
