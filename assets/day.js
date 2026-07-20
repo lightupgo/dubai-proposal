@@ -1,4 +1,4 @@
-const siteVersion = '20260720-2';
+const siteVersion = '20260721-1';
 
 const chapters = {
   '2019-10-04': {
@@ -247,7 +247,8 @@ const chapters = {
         media: [
           { type: 'image', src: '../assets/images/oct6/IMG_2759.jpg', alt: 'Gez and Hetty taking a selfie from their camel ride', caption: 'Setting off together' },
           { type: 'image', src: '../assets/images/oct6/IMG_2769.jpg', alt: 'Gez and Hetty seated together on a camel in the Dubai desert', caption: 'Together at the desert’s pace' },
-          { type: 'image', src: '../assets/images/oct6/IMG_2776.jpg', alt: 'Gez and Hetty waving from a camel beneath the open sky', caption: 'One last wave from the dunes', layout: 'portrait' }
+          { type: 'image', src: '../assets/images/oct6/IMG_2776.jpg', alt: 'Gez and Hetty waving from a camel beneath the open sky', caption: 'One last wave from the dunes', layout: 'portrait' },
+          { type: 'image', src: '../assets/images/oct6/IMG_2787.jpg', alt: 'Hetty smiling beside resting camels in the Dubai desert', caption: 'Hetty beside our desert companions' }
         ]
       },
       {
